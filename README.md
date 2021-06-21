@@ -2,6 +2,10 @@
 
 > A Vue.js project
 
+## Preview
+
+<img src="https://github.com/cepiloth/router-vue/blob/main/example/router.gif"/>
+
 ## Build Setup
 
 ``` bash
