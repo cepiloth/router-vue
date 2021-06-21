@@ -1,7 +1,35 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+
+import Hello from './components/Hello.vue'
+import Login from './components/Login.vue'
+
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
+
+
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: Hello
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
+  }
+]
+
+const router = new VueRouter({
+  routes
+})
+
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
-  render: h => h(App)
+  router,
+  template: '<App/>',
+  components: { App }
 })
