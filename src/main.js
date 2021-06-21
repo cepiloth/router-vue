@@ -34,6 +34,7 @@ const routes = [
       {
         path: 'famous',
         name: 'stories.famous',
+        alias: '/famous',
         component: StoriesFamous
       }
     ]
